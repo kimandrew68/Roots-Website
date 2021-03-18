@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic-tac-toe</title>
+	<link rel="stylesheet" href="css/ttt.css">
+	<script src="js/master.js"></script>
+</head>
+<body>
+	<div id="gameArea">
+		<div id="gameBoard">
+	<!--
+	<script>
+		var builder = "<table>";
+
+		for (var i = 0; i < 3; i++) {
+			builder += "<tr>";
+			for (var j = 0 ; j < 3; j++) {
+				if (counter % 2 == 0) {
+					builder += "<td class = 'even'>Yes</td>";
+				}
+				
+				else {
+					builder += "<td class = 'odd'>Yes</td>"
+				}
+
+				counter++
+			}
+
+			builder += "</tr>";
+		}
+
+		builder += "</table>";
+		document.writeln(builder);
+	</script>
+	-->
+			<table>
+				<tr>
+					<th colspan="3">Tic-Tac-Toe</th>
+						</tr>
+				<tr>
+					<td class="Box1"></td>
+					<td class="Box2"></td>
+					<td class="Box1"></td>			
+				</tr>
+				<tr>
+					<td class="Box2"></td>
+					<td class="Box1"></td>
+					<td class="Box2"></td>			
+				</tr>
+				<tr>
+					<td class="Box1"></td>
+					<td class="Box2"></td>
+					<td class="Box1"></td>			
+				</tr>
+			</table>
+		</div>
+		<div id="playerInfo">
+			Player 1&nbsp;&nbsp;
+			<input type="text" id="player1Name" placeholder="Please enter your name" size="25"/>
+			<br>
+			<br>
+			<select id="player1Image" onchange="enterPlayer('player1')">
+				<option value="#">-- Select your avatar --</option>
+				<option value="Grookey">Grookey</option>
+				<option value="Litten">Litten</option>
+				<option value="Popplio">Popplio</option>
+			</select>
+			<div id="player1Info"></div>
+			<hr>
+			Player 2&nbsp;&nbsp;
+			<input type="text" id="player2Name" placeholder="Please enter your name" size="25"/>
+			<br>
+			<br>
+			<select id="player2Image" onchange="enterPlayer('player2')">
+				<option value="#">-- Select your avatar --</option>
+				<option value="Rowlet">Rowlet</option>
+				<option value="Scorbunny">Scorbunny</option>
+				<option value="Sobble">Sobble</option>
+			</select>
+			<div id="player2Info"></div>
+		</div>
+	</div>
+	<div>
+		<button onclick="isPalindrome()">Check Palindrome</button>
+		<br>
+		<button onclick="convertRoman()">Check Roman</button>
+		<br>
+		<button onclick="test()">Test</button>
+	</div>
+</body>
+</html>
