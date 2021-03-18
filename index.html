@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>All About Andrew</title>
+		<script>
+			var prime;
+			var x;
+
+			function isPrime(x) {
+
+				// Prime number can only be divisible by 1 and itself
+				// p = {2, 3, 5, 7, 11......}
+				// !p = {4, 6, 8, 9, 10.....}
+
+				/*	
+				x = 49
+				let i be a possible divisor, starting from 2
+				Check 2, 2 + 1, 2 + 2..., x - 1
+				*/
+				
+				var prime = true;
+
+				for(var i = 2; i <= Math.sqrt(x); i++) {	// set start point; set end point; set increment
+					if(x % i == 0) {			// Modulus operator. In this case, returns the remainder. "=" is used to declare variables. "==" is for comparing
+						prime = false;
+						break;
+					}
+					else {
+						continue;
+					}
+				}
+
+				return prime
+			}
+
+			function greatestPrime() {
+				for(x = 1000000000; x > 1; x--) {
+					if(isPrime(x)) {
+						alert(x + " is the greatest prime number less than 1 billion.")
+						break;
+					}
+
+					else {
+						continue;
+					}
+				}		
+			}
+		</script>
+</head>
+
+<body>
+	<h1>Hello World! This is Andrew's first webpage!</h1>
+	<h2>My Hobbies</h2>
+	<ul>
+		<li>Gaming</li>
+		<li>Sleeping</li>
+		<li>Eating</li>
+			<ol type="A">
+				<li>Korean food</li>
+				<li>Sushi</li>
+				<li>Poke</li>
+			</ol>
+		<li>Socializing</li>
+		<li>Spending time with Roots students</li>
+	</ul>
+	<hr>
+	<b>My Favorite Website:</b> <a href="https://www.myrunningman.com" target="_blank">Running Man Episodes</a>
+	<br>
+	<i>My Favorite Pokemon:</i> <img src="images/mime.jpg" />
+	<br>
+	<u>My Social Media</u>
+	<br>
+	<a href="https://www.facebook.com/kimandrew68/" target="_blank"><img src="images/facebook.png" /></a>&nbsp;&nbsp;
+	<a href="https://www.instagram.com/kimandrew68/" target="_blank"><img src="images/instagram.png" /></a>&nbsp;&nbsp;
+	<a href="https://www.linkedin.com/in/andrew-kim-668827132/" target="_blank"><img src="images/linkedin.png" /></a>&nbsp;&nbsp;
+	<a href="https://www.snapchat.com/add/kimandrew68/" target="_blank"><img src="images/snapchat.png" /></a>
+	<br>
+	<br>
+	<table border="1">
+		<tr>
+			<th colspan="4">My Family</th>
+		</tr>
+		<tr>
+			<td colspan="4">
+				<img src="images/Family.jpg" />
+			</td>
+		</tr>
+		<tr>
+			<td rowspan="2">My Crush</td>
+			<td colspan="3">JiU</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<img src="images/Celeb.jpg" />
+			</td>
+		</tr>
+	</table>
+	<br>
+	<button onclick="greatestPrime()">Check Prime</button>
+</body>
+</html>
