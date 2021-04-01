@@ -38,19 +38,19 @@
 					<th colspan="3">Tic-Tac-Toe</th>
 						</tr>
 				<tr>
-					<td class="Box1"></td>
-					<td class="Box2"></td>
-					<td class="Box1"></td>			
+					<td id="b1" class="Box1" onclick="changeImage('b1');tttDictionary('b1');"></td>
+					<td id="b2" class="Box2" onclick="changeImage('b2');tttDictionary('b2');"></td>
+					<td id="b3" class="Box1" onclick="changeImage('b3');tttDictionary('b3');"></td>			
 				</tr>
 				<tr>
-					<td class="Box2"></td>
-					<td class="Box1"></td>
-					<td class="Box2"></td>			
+					<td id="b4" class="Box2" onclick="changeImage('b4');tttDictionary('b4');"></td>
+					<td id="b5" class="Box1" onclick="changeImage('b5');tttDictionary('b5');"></td>
+					<td id="b6" class="Box2" onclick="changeImage('b6');tttDictionary('b6');"></td>			
 				</tr>
 				<tr>
-					<td class="Box1"></td>
-					<td class="Box2"></td>
-					<td class="Box1"></td>			
+					<td id="b7" class="Box1" onclick="changeImage('b7');tttDictionary('b7');"></td>
+					<td id="b8" class="Box2" onclick="changeImage('b8');tttDictionary('b8');"></td>
+					<td id="b9" class="Box1" onclick="changeImage('b9');tttDictionary('b9');"></td>			
 				</tr>
 			</table>
 		</div>
@@ -81,6 +81,7 @@
 		</div>
 	</div>
 	<div>
+		<button onclick="reset()">Reset Board</button>
 		<button onclick="isPalindrome()">Check Palindrome</button>
 		<br>
 		<button onclick="convertRoman()">Check Roman</button>
